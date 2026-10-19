@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Intro from "./Intro";
 import Stats from "./Stats";
+import Contribute from "./Contribute";
 export default function Hero() {
 
     const [stars, setStars] = useState(0);
@@ -30,7 +31,7 @@ export default function Hero() {
     <div>
       <Intro author="Hanz Ivan Hermosada" />
       <Stats stars={stars} downloads={downloads} issues={issues} />
-
+       <Contribute issues={issues} />
       <div className="flex justify-center gap-4 py-6">
         <button
           className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
